@@ -1,4 +1,4 @@
-Privacy Policy for Breathe
+Privacy Policy for Breathe by Aegidios Studios™
 
 Last updated: December 12, 2024
 
