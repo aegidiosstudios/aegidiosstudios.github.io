@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Replace YOURAPPID with your actual App Store ID -->
+    <!-- Smart App Banner - this still works on iOS -->
     <meta name="apple-itunes-app" content="app-id=6739349768">
     <title>Aegidios Breathe</title>
     <style>
@@ -15,6 +15,7 @@
             flex-direction: column;
             min-height: 100vh;
             background-color: #fff;
+            text-align: center;
         }
 
         main {
@@ -22,15 +23,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             padding: 3rem 1rem;
-            max-width: 1000px;
-            margin: 0 auto;
         }
 
-        .widget-container {
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
+        .app-store-badge {
+            height: 40px;
+            margin: 20px 0;
         }
 
         footer {
@@ -56,12 +55,7 @@
             color: #86868b;
         }
 
-        /* Mobile responsiveness */
         @media (max-width: 600px) {
-            main {
-                padding: 2rem 1rem;
-            }
-
             .footer-links {
                 gap: 1rem;
             }
@@ -70,16 +64,10 @@
 </head>
 <body>
     <main>
-        <div class="widget-container">
-            <!-- Replace YOURAPPID with your App Store ID -->
-            <iframe 
-                src="https://tools.applemediaservices.com/widget/en-us/6739349768?type=medium"
-                height="550px"
-                width="100%"
-                frameborder="0"
-                style="border:none; overflow:hidden; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-            </iframe>
-        </div>
+        <!-- Replace with your app store URL -->
+        <a href="https://apps.apple.com/app/id6739349768">
+            <img class="app-store-badge" src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
     </main>
 
     <footer>
@@ -87,7 +75,7 @@
             <a href="/privacy">Privacy Policy</a>
             <a href="/support">Support</a>
             <a href="/pricing">Pricing</a>
-            <a href="https://instagram.com/aegidiosbreathe" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer">Instagram</a>
         </nav>
     </footer>
 </body>
