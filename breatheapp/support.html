@@ -3,80 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aegidios Breathe Support</title>
+    <meta name="apple-itunes-app" content="app-id=6739349768">
+    <title>Aegidios Breathe - Support & FAQ</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f5f5f7 0%, #fff 100%);
+            min-height: 100vh;
+            line-height: 1.5;
+            color: #1d1d1f;
+        }
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .content {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 34px;
+            font-weight: 700;
+            margin: 0 0 32px;
+            background: linear-gradient(90deg, #007AFF, #5856D6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 32px 0 16px;
+            color: #1d1d1f;
+        }
+
+        p {
+            font-size: 16px;
+            color: #494949;
+            margin: 0 0 16px;
+            line-height: 1.6;
+        }
+
+        .warning-box {
+            background: rgba(255, 149, 0, 0.1);
+            border-radius: 12px;
             padding: 20px;
+            margin: 24px 0;
         }
-        h1, h2 {
-            color: #000;
+
+        .warning-box p {
+            color: #c93400;
+            margin: 0;
         }
-        .warning {
-            background-color: #fff3e0;
-            border-left: 4px solid #ff9800;
-            padding: 15px;
-            margin: 20px 0;
+
+        .pro-tips {
+            background: rgba(255, 204, 0, 0.1);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
         }
-        .contact {
-            background-color: #f5f5f5;
+
+        .tip {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .tip:last-child {
+            margin-bottom: 0;
+        }
+
+        .tip-icon {
+            color: #ffd60a;
+            flex-shrink: 0;
+        }
+
+        .privacy-box {
+            background: rgba(52, 199, 89, 0.1);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .privacy-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .privacy-icon {
+            color: #34c759;
+            flex-shrink: 0;
+        }
+
+        .contact-box {
+            background: rgba(0, 122, 255, 0.1);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
             padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
+            border-top: 1px solid #d2d2d7;
         }
-        .section {
-            margin: 30px 0;
+
+        .links a {
+            text-decoration: none;
+            color: #1d1d1f;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .links a:hover {
+            color: #007AFF;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #86868b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .content {
+                padding: 24px;
+                border-radius: 16px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Aegidios Breathe Support</h1>
+    <div class="container">
+        <div class="content">
+            <h1>Support & FAQ</h1>
 
-    <div class="section">
-        <h2>Getting Started</h2>
-        <p>Aegidios Breathe is a simple, focused breathing app designed to help you practice various breathing techniques. The app works completely offline and requires no setup.</p>
+            <section>
+                <h2>Welcome to Breathe!</h2>
+                <p>Paying attention to the breath helps us settle down, breathe deeper and feel better. Breathing exercises may also enhance our current physiology and help us improve our physical and cognitive performance over time.</p>
+                <p>You can do the exercises as often as you like.</p>
+                <p>Be gentle with yourself. This is supposed to feel good, and if it doesn't or you get dizzy, that's a sign to slow down 😊</p>
+            </section>
+
+            <div class="warning-box">
+                <p><strong>⚠️ Important Safety Note:</strong> Only practice breathing when it is safe and you don't have to pay attention to anything else. So not while driving or in water or any crazy shit like that. You may fall asleep.   Sit or lie down in a safe place. Ask a doctor if you are uncertain of your limitations.</p>
+            </div>
+
+            <section>
+                <h2>Pro Tips</h2>
+                <div class="pro-tips">
+                    <div class="tip">
+                        <span class="tip-icon">💡</span>
+                        <p>Put your phone in flightmode if you can. This is your time.</p>
+                    </div>
+                    <div class="tip">
+                        <span class="tip-icon">💡</span>
+                        <p>Breathing in through nose, out through mouth is generally good. But do what feels best for you.</p>
+                    </div>
+                    <div class="tip">
+                        <span class="tip-icon">💡</span>
+                        <p>You can pause at any time during your practice, which is especially useful to extend holds.</p>
+                    </div>
+                    <div class="tip">
+                        <span class="tip-icon">💡</span>
+                        <p>You can use your own music and turn off the retention and relaxation sounds. If you do there is a gong that helps you keep track of when retentions begin and end.</p>
+                    </div>
+                    <div class="tip">
+                        <span class="tip-icon">💡</span>
+                        <p>After completing all rounds, there's a relaxation phase that continues until you choose to stop.</p>
+                    </div>
+                    <div class="tip">
+                        <span class="tip-icon">💡</span>
+                        <p>Take as much time as you need to fully relax, integrate the practice, or meditate after your session.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Troubleshooting</h2>
+                <p>If you experience any issues:</p>
+                <ul>
+                    <li>Ensure your device's sound is not muted if using audio features</li>
+                    <li>Try closing and reopening the app</li>
+                    <li>Check if your device needs an update</li>
+                    <li>If issues persist, try deleting and reinstalling the app</li>
+                </ul>
+            </section>
+
+            <div class="contact-box">
+                <h2>Get in Touch</h2>
+                <p>Have questions, found a bug, or want to suggest an improvement? I'd love to hear from you!</p>
+                <ul>
+                    <li>Use the contact feature within the app</li>
+                    <li>Or message us on Instagram @aegidiosbreathe</li>
+                </ul>
+            </div>
+
+            <footer>
+                <p>© 2024 Aegidios Studios™. All rights reserved.</p>
+            </footer>
+        </div>
+
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="commercial.html">Commercial Policy</a>
+            <a href="https://instagram.com/aegidiosbreathe" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
     </div>
-
-    <div class="warning">
-        <strong>⚠️ Safety Note:</strong>
-        <p>Only practice breathing exercises when it is safe and you don't have to pay attention to anything else. Sit or lie down. Consult a doctor if you are uncertain of your limitations.</p>
-    </div>
-
-    <div class="section">
-        <h2>Common Questions</h2>
-        <h3>How do I pause a session?</h3>
-        <p>Tap the pause button during any session. You can resume when ready.</p>
-        
-        <h3>Can I customize the sounds?</h3>
-        <p>Yes, in Settings you can enable or disable different sounds individually.</p>
-        
-        <h3>How do I create a custom breathing pattern?</h3>
-        <p>Select "Custom" from the breathing patterns and adjust all parameters in Settings to create your perfect practice.</p>
-    </div>
-
-    <div class="section">
-        <h2>Troubleshooting</h2>
-        <p>If you experience any issues:</p>
-        <ol>
-            <li>Ensure your device's sound is not muted if using audio features</li>
-            <li>Try closing and reopening the app</li>
-            <li>Check if your device needs an update</li>
-            <li>If issues persist, try deleting and reinstalling the app</li>
-        </ol>
-    </div>
-
-    <div class="contact">
-        <h2>Contact</h2>
-        <p>Need help or want to provide feedback? Email us at: <a href="mailto:breatheapp@aegidios.com">breatheapp@aegidios.com</a></p>
-        <p>We aim to respond within 24-48 hours.</p>
-    </div>
-
-    <footer>
-        <p>© 2024 Aegidios Studios™. All rights reserved.</p>
-    </footer>
 </body>
 </html>
