@@ -3,80 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Smart App Banner - this still works on iOS -->
-    <meta name="apple-itunes-app" content="app-id=6739349768">
-    <title>Aegidios Breathe</title>
+    <title>Aegidios Breathe - Official Site</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #fff;
+            background-color: #f7f7f7;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+        /* Product card styling */
+        .product-card {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
             text-align: center;
+            margin-bottom: 40px;
         }
-
-        main {
-            flex: 1;
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-card .content {
+            padding: 20px;
+        }
+        .product-card h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .product-card p {
+            font-size: 16px;
+            color: #555;
+        }
+        /* Link styling */
+        .links {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 3rem 1rem;
+            justify-content: space-around;
+            margin-top: 30px;
         }
-
-        .app-store-badge {
-            height: 40px;
-            margin: 20px 0;
-        }
-
-        footer {
-            padding: 2rem;
-            border-top: 1px solid #d2d2d7;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: #1d1d1f;
+        .links a {
             text-decoration: none;
-            font-size: 0.875rem;
-            transition: color 0.2s ease;
+            color: #007aff;
+            font-size: 18px;
         }
-
-        .footer-links a:hover {
-            color: #86868b;
-        }
-
-        @media (max-width: 600px) {
-            .footer-links {
-                gap: 1rem;
-            }
+        .links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <main>
-        <!-- Replace with your app store URL -->
-        <a href="https://apps.apple.com/app/id6739349768">
-            <img class="app-store-badge" src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store">
-        </a>
-    </main>
+    <div class="container">
+        <!-- Product card section -->
+        <div class="product-card">
+            <img src="your-product-image.jpg" alt="Aegidios Breathe App">
+            <div class="content">
+                <h1>Aegidios Breathe</h1>
+                <p>Powerful, simple breathing exercises and full customization. Pay once, use forever: No subscriptions, no ads, no gated functions. A trusty guide in your pocket that helps you harness your breath.</p>
+            </div>
+        </div>
 
-    <footer>
-        <nav class="footer-links">
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/support">Support</a>
-            <a href="/pricing">Pricing</a>
-            <a href="https://instagram.com/aegidiosbreathe" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </nav>
-    </footer>
+        <!-- Links to subpages -->
+        <div class="links">
+            <a href="breatheapp/support.html">Overview</a>
+            <a href="breatheapp/privacy.html">Privacy Policy</a>
+            <a href="breatheapp/commercial.html">Contact</a>
+        </div>
+    </div>
 </body>
 </html>
+
