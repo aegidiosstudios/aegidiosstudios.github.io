@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add your App Store ID here -->
     <meta name="apple-itunes-app" content="app-id=6739349768">
     <title>Aegidios Breathe - Official Site</title>
     <style>
@@ -22,27 +23,6 @@
             padding: 40px 20px;
         }
 
-        .hero {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            font-weight: 700;
-            margin: 0 0 20px;
-            background: linear-gradient(90deg, #007AFF, #5856D6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero h2 {
-            font-size: 28px;
-            font-weight: 500;
-            margin: 0 0 30px;
-            color: #1d1d1f;
-        }
-
         .product-card {
             background: white;
             border-radius: 24px;
@@ -57,7 +37,12 @@
             transform: translateY(-4px);
         }
 
-        .product-card img {
+        .app-link {
+            display: block;
+            cursor: pointer;
+        }
+
+        .app-link img {
             width: 100%;
             height: auto;
             display: block;
@@ -71,21 +56,7 @@
             font-size: 18px;
             color: #494949;
             max-width: 800px;
-            margin: 0 auto 30px;
-        }
-
-        .app-store-button {
-            display: inline-block;
-            margin: 20px 0;
-        }
-
-        .app-store-button img {
-            height: 48px;
-            transition: opacity 0.2s ease;
-        }
-
-        .app-store-button:hover img {
-            opacity: 0.8;
+            margin: 0 auto;
         }
 
         .links {
@@ -114,14 +85,6 @@
                 padding: 20px;
             }
 
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .hero h2 {
-                font-size: 24px;
-            }
-
             .content {
                 padding: 20px;
             }
@@ -138,26 +101,20 @@
 </head>
 <body>
     <div class="container">
-        <div class="hero">
-            <h1>New launch alert.</h1>
-            <h2>Ready. Set. Get.</h2>
-        </div>
-        
         <div class="product-card">
-            <img src="productcard.png" alt="Aegidios Breathe App">
+            <!-- Make the image area clickable -->
+            <a href="https://apps.apple.com/app/id6739349768" class="app-link">
+                <img src="productcard.png" alt="Aegidios Breathe App">
+            </a>
             <div class="content">
                 <p>Powerful, simple breathing exercises and full customization. Pay once, use forever: No subscriptions, no ads, no gated functions. A trusty guide in your pocket that helps you harness your breath.</p>
-                <!-- Replace YOURAPPID with your actual App Store ID -->
-                <a href="https://apps.apple.com/app/id6739349768" class="app-store-button">
-                    <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download on the App Store">
-                </a>
             </div>
         </div>
 
         <div class="links">
             <a href="breatheapp/support.html">Support & FAQ</a>
-            <a href="breatheapp/privacy.html">Privacy Policy</a>
             <a href="breatheapp/commercial.html">Commercial Policy</a>
+              <a href="breatheapp/privacy.html">Privacy Policy</a>
             <a href="https://instagram.com/aegidiosbreathe" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
     </div>
