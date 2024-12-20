@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-itunes-app" content="app-id=6739349768">
+    <meta name="apple-itunes-app" content="app-id=YOURAPPID">
     <title>Aegidios Breathe - Support & FAQ</title>
     <style>
+        /* [Previous styles remain the same] */
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
             margin: 0;
@@ -46,11 +47,15 @@
             color: #1d1d1f;
         }
 
-        p {
-            font-size: 16px;
+        .question {
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+        }
+
+        .answer {
             color: #494949;
-            margin: 0 0 16px;
-            line-height: 1.6;
+            margin-bottom: 20px;
         }
 
         .warning-box {
@@ -60,13 +65,15 @@
             margin: 24px 0;
         }
 
-        .warning-box p {
-            color: #c93400;
-            margin: 0;
-        }
-
         .pro-tips {
             background: rgba(255, 204, 0, 0.1);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .early-adopter-box {
+            background: rgba(0, 122, 255, 0.1);
             border-radius: 12px;
             padding: 24px;
             margin: 24px 0;
@@ -76,7 +83,7 @@
             display: flex;
             align-items: flex-start;
             gap: 12px;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
         }
 
         .tip:last-child {
@@ -84,34 +91,16 @@
         }
 
         .tip-icon {
-            color: #ffd60a;
             flex-shrink: 0;
         }
 
-        .privacy-box {
-            background: rgba(52, 199, 89, 0.1);
-            border-radius: 12px;
-            padding: 24px;
-            margin: 24px 0;
+        a {
+            color: #007AFF;
+            text-decoration: none;
         }
 
-        .privacy-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin-bottom: 8px;
-        }
-
-        .privacy-icon {
-            color: #34c759;
-            flex-shrink: 0;
-        }
-
-        .contact-box {
-            background: rgba(0, 122, 255, 0.1);
-            border-radius: 12px;
-            padding: 24px;
-            margin: 24px 0;
+        a:hover {
+            text-decoration: underline;
         }
 
         .links {
@@ -140,25 +129,6 @@
             color: #86868b;
             font-size: 14px;
         }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-
-            .content {
-                padding: 24px;
-                border-radius: 16px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            h2 {
-                font-size: 20px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -168,21 +138,37 @@
 
             <section>
                 <h2>Welcome to Breathe!</h2>
-                <p>Paying attention to the breath helps us settle down, breathe deeper and feel better. Breathing exercises may also enhance our current physiology and help us improve our physical and cognitive performance over time.</p>
-                <p>You can do the exercises as often as you like.</p>
-                <p>Be gentle with yourself. This is supposed to feel good, and if it doesn't or you get dizzy, that's a sign to slow down 😊</p>
+                <p>Paying attention to the breath helps us settle down, breathe deeper and feel better. Breathing exercises may enhance our current physiology and help us improve our physical and cognitive performance over time.</p>
+                <p>You can do the exercises as often as you like - this is your tool to use whenever you need it.</p>
             </section>
 
             <div class="warning-box">
-                <p><strong>⚠️ Important Safety Note:</strong> Only practice breathing when it is safe and you don't have to pay attention to anything else. So not while driving or in water or any crazy shit like that. You may fall asleep.   Sit or lie down in a safe place. Ask a doctor if you are uncertain of your limitations.</p>
+                <p><strong>⚠️ Important Safety Note:</strong> Only practice breathing when it is safe and you don't have to pay attention to anything else. Sit or lie down. Ask a doctor if you are uncertain of your limitations.</p>
+                <p>Be gentle with yourself. This is supposed to feel good, and if it doesn't or you get dizzy, that's a sign to slow down 😊</p>
             </div>
+
+            <section>
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="question">How do I pause a session?</div>
+                <div class="answer">You can pause at any time by tapping the pause button. This is especially useful when you want to extend holds or take a break.</div>
+
+                <div class="question">Can I use my own music?</div>
+                <div class="answer">Yes! You can use your own music, the app's built-in sounds, or practice in silence. When using your own music, you'll still hear the gong sounds marking important moments in your practice.</div>
+
+                <div class="question">What happens after completing the rounds?</div>
+                <div class="answer">There's a relaxation phase that continues until you choose to stop. Take as much time as you need to fully relax and integrate your practice.</div>
+
+                <div class="question">Can I customize the exercises?</div>
+                <div class="answer">Yes! While we provide carefully designed preset patterns, you can also create your own custom exercises with full control over all parameters.</div>
+            </section>
 
             <section>
                 <h2>Pro Tips</h2>
                 <div class="pro-tips">
                     <div class="tip">
                         <span class="tip-icon">💡</span>
-                        <p>Put your phone in flightmode if you can. This is your time.</p>
+                        <p>Put your phone in flight mode if you can. This is your time.</p>
                     </div>
                     <div class="tip">
                         <span class="tip-icon">💡</span>
@@ -190,40 +176,27 @@
                     </div>
                     <div class="tip">
                         <span class="tip-icon">💡</span>
-                        <p>You can pause at any time during your practice, which is especially useful to extend holds.</p>
+                        <p>The gong sounds help you track retentions even when using your own music or during silent practice.</p>
                     </div>
                     <div class="tip">
                         <span class="tip-icon">💡</span>
-                        <p>You can use your own music and turn off the retention and relaxation sounds. If you do there is a gong that helps you keep track of when retentions begin and end.</p>
-                    </div>
-                    <div class="tip">
-                        <span class="tip-icon">💡</span>
-                        <p>After completing all rounds, there's a relaxation phase that continues until you choose to stop.</p>
-                    </div>
-                    <div class="tip">
-                        <span class="tip-icon">💡</span>
-                        <p>Take as much time as you need to fully relax, integrate the practice, or meditate after your session.</p>
+                        <p>Consider using the relaxation phase for meditation or deeper integration of your practice.</p>
                     </div>
                 </div>
             </section>
 
-            <section>
-                <h2>Troubleshooting</h2>
-                <p>If you experience any issues:</p>
-                <ul>
-                    <li>Ensure your device's sound is not muted if using audio features</li>
-                    <li>Try closing and reopening the app</li>
-                    <li>Check if your device needs an update</li>
-                    <li>If issues persist, try deleting and reinstalling the app</li>
-                </ul>
-            </section>
+            <div class="early-adopter-box">
+                <h2>Early Adopter Note</h2>
+                <p>While we've done extensive testing, there might still be a few bugs or things that could work better. This is one reason for our <a href="commercial.html">introductory pricing</a> - we're building trust together.</p>
+                <p>If you find any issues or have suggestions for improvement, please let us know through the app's contact feature or Instagram. We're committed to making this the best breathing app possible.</p>
+            </div>
 
             <div class="contact-box">
                 <h2>Get in Touch</h2>
-                <p>Have questions, found a bug, or want to suggest an improvement? I'd love to hear from you!</p>
+                <p>Questions, bug reports, or suggestions? We'd love to hear from you!</p>
                 <ul>
                     <li>Use the contact feature within the app</li>
-                    <li>Or message us on Instagram @aegidiosbreathe</li>
+                    <li>Follow and message us on Instagram @aegidiosbreathe</li>
                 </ul>
             </div>
 
