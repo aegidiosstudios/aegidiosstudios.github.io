@@ -147,6 +147,26 @@
                 font-size: 20px;
             }
         }
+        
+        .music-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.music-icons a {
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.music-icons a:hover {
+    transform: scale(1.1);
+}
+
+.music-icons img {
+    border-radius: 8px;
+}
     </style>
 </head>
 <body>
@@ -175,8 +195,8 @@
                 <div class="question">How often can I do the exercises?</div>
                 <div class="answer">You can do them as often as you like as long as it feels good. But with the longer and more intense exercises, more than once or twice a day is probably over the top. </div>
 
-                <div class="question">Can I use my own music?</div>
-                <div class="answer">Yes! You can use your own music, the app's built-in sounds, or practice in silence. When using your own music, it's best to mute the app's retention and relaxation sounds. </div>
+                <div class="question">What music should I use? Can I use my own?</div>
+                <div class="answer">Yes! You can use your own music, the app's built-in sounds, or practice in silence. When using your music, it's best to mute the app's retention and relaxation sounds but helpful to leave the other sounds on. For exercises such as Going Deep and Healing Crucible, you can use our curated playlists on Apple Music or Spotify.  </div>
 
                 <div class="question">How should I breathe when doing the exercises?</div>
                 <div class="answer">You can breathe as you like, but it is generally good to breathe in through the nose and out through the mouth. Try to breathe deeply from your belly and up. Don't force anything. </div>
@@ -232,7 +252,19 @@
             <a href="privacy.html">Privacy Policy</a>
             <a href="commercial.html">Commercial Policy</a>
             <a href="https://instagram.com/aegidiosbreathe" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="/meditation">Meditation</a>
         </div>
     </div>
+    <section>
+    <h2>Listen to Our Playlists</h2>
+    <div class="music-icons">
+        <a href="https://music.apple.com/profile/aegidiosbreathe" target="_blank" aria-label="Apple Music">
+            <img src="apple-music-icon.png" alt="Apple Music" width="50" height="50">
+        </a>
+        <a href="https://open.spotify.com/playlist/YOUR-SPOTIFY-PLAYLIST-ID" target="_blank" aria-label="Spotify">
+            <img src="spotify-icon.png" alt="Spotify" width="50" height="50">
+        </a>
+    </div>
+</section>
 </body>
 </html>
