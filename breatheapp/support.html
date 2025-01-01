@@ -147,6 +147,26 @@
                 font-size: 20px;
             }
         }
+        
+        .music-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.music-icons a {
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.music-icons a:hover {
+    transform: scale(1.1);
+}
+
+.music-icons img {
+    border-radius: 8px;
+}
     </style>
 </head>
 <body>
@@ -235,5 +255,16 @@
               <a href="/meditation">Meditation</a>
         </div>
     </div>
+    <section>
+    <h2>Listen to Our Playlists</h2>
+    <div class="music-icons">
+        <a href="https://music.apple.com/profile/aegidiosbreathe" target="_blank" aria-label="Apple Music">
+            <img src="apple-music-icon.png" alt="Apple Music" width="50" height="50">
+        </a>
+        <a href="https://open.spotify.com/playlist/YOUR-SPOTIFY-PLAYLIST-ID" target="_blank" aria-label="Spotify">
+            <img src="spotify-icon.png" alt="Spotify" width="50" height="50">
+        </a>
+    </div>
+</section>
 </body>
 </html>
